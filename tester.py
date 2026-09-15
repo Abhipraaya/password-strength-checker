@@ -1,7 +1,7 @@
 import string
 
 def checkCommon(password):
-    with open('100k-most-used-passwords-NCSC.txt', 'r') as f:
+    with open('common-passwords-win.txt', 'r') as f:
         commonPasswords = f.read().splitlines()
     if password in commonPasswords:
         return True
